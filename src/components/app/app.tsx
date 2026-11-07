@@ -17,9 +17,6 @@ export const App = (): React.JSX.Element => {
     setAppliedState(newState);
   };
 
-  const handleReset = (): void => {
-    setAppliedState(defaultArticleState);
-  };
   return (
     <main
       className={clsx(styles.main)}
@@ -33,11 +30,7 @@ export const App = (): React.JSX.Element => {
         } as CSSProperties
       }
     >
-      <ArticleParamsForm
-        appliedState={appliedState}
-        onApply={handleApply}
-        onReset={handleReset}
-      />
+      <ArticleParamsForm onApply={handleApply} />
       <Article />
     </main>
   );

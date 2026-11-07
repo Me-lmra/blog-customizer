@@ -43,7 +43,7 @@
 	outline: 3px solid #000;
 }
 
-.selectWrapper:not([data-is-active='true']).placeholder:not([data-status='invalid']):hover {
+.selectWrapper:not([data-is-active='true']) .placeholder:not([data-status='invalid']):hover {
 	outline: 1px solid #ffc802;
 }
 
